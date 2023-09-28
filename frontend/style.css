@@ -1,0 +1,82 @@
+h1, h2, h3{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+body{
+    background-color: #03060d;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.center{
+    text-align:center;
+}
+
+.title{
+    padding-top: 1em;
+}
+
+.outline {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--primary);
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.entry{
+    display:flex;
+    height: 2em;
+    border: 1px solid #777;
+    padding: 10px;
+    align-items: center;
+    border-radius: .5em;
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+}
+
+.add{
+    display:flex;
+    height:2em;
+    border: 1px dotted white;			
+    padding: 10px;
+    align-items: center;
+    border-radius: .5em;
+    justify-content: center;
+}
+
+input.check {
+    width: 20px;
+    height: 20px;
+    margin-right: 1em;
+}
+
+.task{
+    display:flex;
+    align-items: center;
+    flex-grow: 1;
+     margin-right: 10px;
+}
+
+.taskText{
+    flex-grow: 1;
+    height: 3em;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    background: transparent;
+     border: none;
+     font-size: 1em;
+     outline: none;
+}
+
+input:checked + input{
+    text-decoration: line-through;
+}
